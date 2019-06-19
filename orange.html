@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="us">
+	<head>
+		<title>Oranges</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta charset="utf-8">
+		<meta name="description" content="Orange Subpage">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="jquery-ui.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<header>
+		
+			<h1>Bananas or Oranges?</h1>
+			<a href="index.html">
+				<img id="header_picture" src="images/header_picture.jpeg" alt="header_picture">
+			</a>
+	
+		</header>
+
+		<main id="sub2">
+
+			<h2>Orange Fact Tabs</h2>
+			
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">First</a></li>
+					<li><a href="#tabs-2">Second</a></li>
+					<li><a href="#tabs-3">Third</a></li>
+				</ul>
+				<div id="tabs-1">Oranges can help prevent heart disease due to flavonoids like hesperidin that both reduce cholesterol and prevent its build up.</div>
+				<div id="tabs-2">They contain a lot of vitamins such as vitamin A, vitamin C, and vitamin B1</div>
+				<div id="tabs-3">Those vitamins also, help prevent hair loss, keeps your vision strong, and boosts your immune system</div>
+			</div>
+
+		<h3>hover over the image to learn more about oranges!</h3>
+		<img id="os" src="images/oranges_smile.jpg" alt="oranges_smile" <a href="#" title="Oranges can also help prevent cancer and other nasty diseases!"></a>
+		
+		</main>
+		
+
+		
+
+		<footer>
+		
+		<p>Elliott Fries - CS2800 - December, 2016</p>
+	
+		</footer>
+
+
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+
+
+
+
+
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+
+
+</body>
+</html>

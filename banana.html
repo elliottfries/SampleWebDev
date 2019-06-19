@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="us">
+<head>
+		<title>Bananas</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta charset="utf-8">
+		<meta name="description" content="Banana Subpage">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="jquery-ui.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> 
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
+
+</head>
+<body>
+
+<header>
+		
+		<h1>Bananas or Oranges?</h1>
+		<a href="index.html">
+			<img id="header_picture" src="images/header_picture.jpeg" alt="header_picture">
+		</a>
+	
+		</header>
+
+<main id="sub">
+
+<h2 class="demoHeaders">Fact Accordion!</h2>
+<div id="accordion">
+	<h3>First</h3>
+	<div>Bananas help you digest food easier! This is due to the high amount of Fiber bananas contain.</div>
+	<h3>Second</h3>
+	<div>Bananas can give you more energy, which is really helpful when you're about to workout!</div>
+	<h3>Third</h3>
+	<div>Bananas have Tryptophan which your body uses to create Serotonin. Proper Serotonin levels help your mood, regulates stress, and regulates your sleep schedule as well!</div>
+</div>
+
+</main>
+
+
+
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+
+
+
+
+
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+
+
+
+
+
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+
+<aside id="home_aside">
+<div id="slideshow">
+				<div class="cycle-slideshow"
+					data-cycle-fx="scrollHorz"
+					data-cycle-timeout="2000"
+					data-cycle-caption="#adv-custom-caption" >
+					<img src="images/banana_solo.jpg" alt="">
+					<img src="images/banana_standard.jpg" alt="">
+					<img src="images/cut_banana.jpg" alt="">
+					<img src="images/banana_mario.jpg" alt="">
+					<img src="images/banana_cheer.jpg" alt="">
+					<!-- empty element for caption -->
+					<div id="adv-custom-caption"></div>
+				</div>      
+            </div>
+
+</aside>
+
+						
+		<footer>
+		
+			<p>Elliott Fries - CS2800 - December, 2016</p>
+	
+		</footer>
+</body>
+</html>
